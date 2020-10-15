@@ -34,3 +34,9 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+# Ignore ds.store file
+/.DS_Store
+
+# Ignore secrets 
+/config/secrets.yml

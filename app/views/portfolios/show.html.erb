@@ -2,3 +2,5 @@
 <em><%= @portfolio_item.subtitle %></em>
 <p><%= @portfolio_item.body %></p>
 <%= image_tag @portfolio_item.main_image unless @portfolio_item.main_image.nil? %> 
+
+<%= link_to 'Destroy', portfolio_path(@portfolio_item), method: :delete, data: { confirm: 'Are you sure?' } %>

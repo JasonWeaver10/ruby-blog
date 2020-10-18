@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2020_10_18_163334) do
+=======
+ActiveRecord::Schema.define(version: 2020_10_16_234116) do
+>>>>>>> portfolio-feature
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,7 +25,10 @@ ActiveRecord::Schema.define(version: 2020_10_18_163334) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "slug"
+<<<<<<< HEAD
     t.integer "status", default: 0
+=======
+>>>>>>> portfolio-feature
     t.index ["slug"], name: "index_blogs_on_slug", unique: true
   end
 

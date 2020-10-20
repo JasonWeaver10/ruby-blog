@@ -24,6 +24,8 @@ puts "3 topics created"
   )
 end
 
+puts "10 blogs created"
+
 
 # 5 skill items created
 5.times do |skill|
@@ -32,6 +34,8 @@ end
     percent: skill
   )
 end
+
+puts "5 skills created"
 
 
 # 9 portfolio items created
@@ -46,6 +50,7 @@ end
   )
 end
 
+
 1.times do |portfolio_item|
   Portfolio.create!(
     title: "Portfolio #{portfolio_item} Title",
@@ -55,5 +60,16 @@ end
     thumb_image: "https://place-hold.it/350x200"
   )
 end
+
+puts "9 portfolio items created"
+
+
+3.times do |technology|
+  Portfolio.last.technologies.create!(
+    name: "Technology #{technology}",
+  )
+end
+
+puts "3 technologies created"
 
 

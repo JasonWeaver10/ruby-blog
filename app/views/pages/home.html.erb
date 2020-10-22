@@ -1,5 +1,9 @@
-<h1>Home Page</h1>
+<h1>Hi, <%= current_user.first_name if current_user %></h1>
 <p>Find me in app/views/pages/home.html.erb</p>
 
+
+<h1>Posts</h1>
+<%@Posts.inspect %>
+
 <h2>Skills</h2>
-<%= @Skills %>
+<%= @Skills.inspect %>

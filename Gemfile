@@ -47,3 +47,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'friendly_id', '~> 5.4.0'
 gem 'devise', '~> 4.7', '>= 4.7.3'
+
+# gem to add view tools 
+gem 'weaver_view_tool', git: 'https://github.com/JasonWeaver10/weaver_view_tool'
+
+# gem to add authorization to app
+gem 'petergate', '~> 2.0', '>= 2.0.1'

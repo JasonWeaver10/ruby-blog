@@ -17,6 +17,8 @@ module ApplicationHelper
     end
   end
   
-
+  def copyright_generator 
+    # WeaverViewTool::Renderer.copyright 'Jason Weaver', "All rights reserved"
+  end
 
 end

@@ -53,3 +53,7 @@ gem 'weaver_view_tool', git: 'https://github.com/JasonWeaver10/weaver_view_tool'
 
 # gem to add authorization to app
 gem 'petergate', '~> 2.0', '>= 2.0.1'
+
+gem 'bootstrap', '~> 5.0.0.beta2'
+gem 'jquery-rails'
+ 

@@ -6,7 +6,7 @@
       <div class="col-md-6 px-0">
         <h1 class="display-4 fst-italic"><%= @blog.title %></h1>
         <p class="lead my-3"><%= @blog.body %></p>
-        <p class="lead mb-0"><%= link_to "Continue Reading...", blogs_path(@blog.id) %></p>
+        <p class="lead mb-0"><%= link_to "Continue Reading...", blog_path(@blog.id) %></p>
       </div>
     </div>
 
@@ -17,7 +17,7 @@
             <div class="col p-4 d-flex flex-column position-static">
               <strong class="d-inline-block mb-2 text-primary"><%= blog.topic.title %></strong>
               <h3 class="mb-0"><%= blog.title %></h3>
-              <div class="mb-1 text-muted"><%= blog.created_at.to_s.humanize %></div>
+              <div class="mb-1 text-muted">Published <%= distance_of_time_in_words(blog.created_at, Time.now) %> ago</div>
               <p class="card-text mb-auto"><%= blog.body %></p>
               <%= link_to "Continue Reading...", blog_path(blog.id) %>
             </div>
